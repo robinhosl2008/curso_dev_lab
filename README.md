@@ -1,15 +1,16 @@
-# curso_dev_lab
+## curso_dev_lab
 https://www.youtube.com/watch?v=W2ld5xRS3cY&amp;list=PLz_YTBuxtxt6_Zf1h-qzNsvVt46H8ziKh
 
-# Branchs
+## Branchs
 
-** develop
-** main
+###### develop
+###### main
 
-# Título da aula
+## Título da aula
 Node.js API [C01P01] - Iniciando o projeto configurando NodeJS, Typescript, yarn e module-alias
+[[URL do vídeo](https://www.youtube.com/watch?v=QyK63wEKnvA&list=PLz_YTBuxtxt6_Zf1h-qzNsvVt46H8ziKh&index=2)] - https://www.youtube.com/watch?v=QyK63wEKnvA&list=PLz_YTBuxtxt6_Zf1h-qzNsvVt46H8ziKh&index=2
 
-# Comandos executados no terminal
+###### Comandos executados no terminal
 
 'npm init -y' - Comando utilizado para iniciar o nosso projeto node criando o arquivo package.json com uma configuração padrão.
 
@@ -17,7 +18,7 @@ Node.js API [C01P01] - Iniciando o projeto configurando NodeJS, Typescript, yarn
 
 'yarn add module-alias && yarn add @types/module-alias' - Configuramos paths no arquivo de configuração do typescript. Esse comando é executado para adicionar como dependência do projeto pois quando colocarmos o mesmo em um ambiente de produção será utilizado. Ele serve para configurarmos nossos paths para que assumam um apelido.
 
-# Não esquecer
+###### Não esquecer
 
 Nesse capítulo adicionamos dois scripts no arquivo packege.json. Um chamado 'build' para exportar o nosso código para JavaScript e o outro chamado 'start' que executa o comando anterior e executa o servidor em seguida.
 
@@ -25,3 +26,11 @@ Nesse capítulo adicionamos dois scripts no arquivo packege.json. Um chamado 'bu
     "build": "tsc",
     "start": "yarn build && node dist/src/index.ts"
 }
+
+--------------------------------------------------------------------------------------------------------------
+
+## Título da aula
+Node.js API [C01P02] - Configurando eslint com NodeJS e Typescript.
+[[URL do vídeo](https://www.youtube.com/watch?v=imo0hXHQzMk&list=PLz_YTBuxtxt6_Zf1h-qzNsvVt46H8ziKh&index=3)] - https://www.youtube.com/watch?v=imo0hXHQzMk&list=PLz_YTBuxtxt6_Zf1h-qzNsvVt46H8ziKh&index=3
+
+eslint - Análise de código estático e regras do código para termos um padrão.
