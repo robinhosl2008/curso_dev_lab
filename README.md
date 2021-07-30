@@ -50,3 +50,30 @@ eslint - Instalamos esse extensão como dependência de desenvolvimento. Basicam
 ```
     yarn add -D @typescript-eslint/eslint-plugin eslint @typescript-eslint/parser
 ```
+
+Também, foi criado um arquivo de nome '.eslintrc' para conter a configuração do mesmo que permite utilizarmos o eslint juntamente com o typescript.
+```
+    {
+        "root": true,
+        "parser": "@typescript-eslint/parser",
+        "plugins": [
+            "@typescript-eslint"
+        ],
+        "extends": [
+            "eslint:recommended",
+            "plugin:@typescript-eslint/eslint-recommended",
+            "plugin:@typescript-eslint/recommended"
+        ]
+    }
+```
+
+Configuramos também dois comandos no arquivo packege.json para mandarmos executar o eslint no nosso código. o nome dos comando é 'lint' e o 'lint:fix'. O primeiro comando vai passar pelo problema e o segundo funciona como o primeiro mas com a diferença de tentar resolver o problema quando possível. Quando o nosso código está passando pelo CI não queremos utilizar o 'lint:fix' por conta do mesmos ser corrigido mas não comitado. Então no CI utilizamos apenas o 'lint' para quebrar quando encontrar um problema. Mas, no ambiente de desenvolvimento é muito útil pois tenta corrigir o problema antes de comitarmos.
+```
+    "scripts": {
+        "build": "tsc",
+        "start": "yarn build && node dist/src/index.ts",
+        "lint": "eslint ./src ./test --ext .ts",
+        "lint:fix": "eslint ./src ./test --ext .ts --fix"
+    }
+```
+
