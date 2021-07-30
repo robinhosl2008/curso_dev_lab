@@ -5,8 +5,8 @@
 - develop
 - main
 
-## Título da aula
-Node.js API [C01P01] - Iniciando o projeto configurando NodeJS, Typescript, yarn e module-alias
+## Título da aula 01
+Node.js API [C01P01] - Iniciando o projeto configurando NodeJS, Typescript, yarn e module-alias -
 [URL da vídeo-aula](https://www.youtube.com/watch?v=QyK63wEKnvA&list=PLz_YTBuxtxt6_Zf1h-qzNsvVt46H8ziKh&index=2)
 
 #### Comandos executados no terminal
@@ -42,11 +42,11 @@ Nesse capítulo adicionamos dois scripts no arquivo packege.json. Um chamado 'bu
 
 --------------------------------------------------------------------------------------------------------------
 
-## Título da aula
+## Título da aula 02
 Node.js API [C01P02] - Configurando eslint com NodeJS e Typescript.
 [URL do vídeo](https://www.youtube.com/watch?v=imo0hXHQzMk&list=PLz_YTBuxtxt6_Zf1h-qzNsvVt46H8ziKh&index=3)
 
-eslint - Análise de código estático e regras do código para termos um padrão.
+eslint - Instalamos esse extensão como dependência de desenvolvimento. Basicamente ela serve para nos ajudar com a análise de código estático e regras do código para termos um padrão. Ou seja, configurar os padrões de código que iremos utilizar no nosso projeto.
 ```
-    
+    yarn add -D @typescript-eslint/eslint-plugin eslint @typescript-eslint/parser
 ```
