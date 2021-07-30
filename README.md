@@ -76,4 +76,16 @@ Configuramos também dois comandos no arquivo packege.json para mandarmos execut
         "lint:fix": "eslint ./src ./test --ext .ts --fix"
     }
 ```
+## Título da aula 03
+Node.js API [C01P03] - Configurando Typescript em dev com ts-node e ts-node-dev.
+[URL do vídeo](https://www.youtube.com/watch?v=TqUiAXZZcLA&list=PLz_YTBuxtxt6_Zf1h-qzNsvVt46H8ziKh&index=4)
 
+Nessa aula adicionamos uma extensão que irá nos ajudar em nosso desenvolvimento. Instalamos como dependência de desenvolvimento por conta de não usarmos em um ambiente de produção.
+```
+    yarn add -D ts-node-dev
+```
+
+Atualmente, utilizamos o comando start para criar um build do nosso projeto. Adicionamos o comando 'start:dev'. O que ele faz é realizar a conversão do nosso código typescript para javascript e rodar o servidor. Isso sem a necessidade de gerar a build do projeto e economizando tempo.
+```
+    "start:dev": "ts-node-dev 'src/index.ts'"
+```
